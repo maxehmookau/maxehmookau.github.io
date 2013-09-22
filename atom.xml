@@ -1,138 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
 
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>My Octopress Blog</title>
-  <meta name="author" content="Max">
+  <title><![CDATA[My Octopress Blog]]></title>
+  <link href="http://maxehmookau.github.io/atom.xml" rel="self"/>
+  <link href="http://maxehmookau.github.io/"/>
+  <updated>2013-09-22T14:31:01+01:00</updated>
+  <id>http://maxehmookau.github.io/</id>
+  <author>
+    <name><![CDATA[Max]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
 
   
-  <meta name="description" content="Hi. I&#8217;m Max. Here are some thoughts of mine. Sep 22nd, 2013 coding education Those who can&#8217;t do&#8230; This is an old blog post I &hellip;">
-  
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
-  <link rel="canonical" href="http://maxehmookau.github.io">
-  <link href="/favicon.png" rel="icon">
-  <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
-  <script src="/js/jquery.js"></script>
-  <script src="/js/bootstrap-collapse.js"></script>
-  <script src="/js/modernizr-2.0.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
-  <script src="/js/octopress.js" type="text/javascript"></script>
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-
-  
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-43177900-1']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
-
-
-</head>
-
-<body   >
-  <div class="navbar navbar-inverse navbar-static-top">
-  	<div class="navbar-inner">
-  	  <div class="container">
-        <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-          <span class="fui-menu-24"></span>
-        </a>
-  	  	<div class="nav-collapse collapse navbar-responsive-collapse" style="height:0;">
-  	      <ul class="nav">
-    
-        <li class="active"><a href="/index.html">Blog</a></li>
-    
-        <li ><a href="/about.html">About</a></li>
-    
-</ul>
-
-<ul class="nav pull-right">
-    
-    <li><a href="http://github.com/maxehmookau" title="Github Profile"><i class="icon-github-sign social-navbar"></i></a></li>
-    
-    
-    
-    <li><a href="http://twitter.com/maxehmookau" title="Twitter Profile"><i class="icon-twitter-sign social-navbar"></i></a></li>
-    
-    
-    
-    
-</ul>
-
-  	    </div>
-  	  </div>
-  	</div>
-  </div>
-  <div class="container" id="main">
-    <div class="span12">
-      <div class="row-fluid">
-        <div id="content">
-          <div class="jumbotron">
-  <div class="container">
-    Hi. I&#8217;m Max.
-    <h3 class="tagline">Here are some thoughts of mine.</h3>
-  </div>
-</div>
-
-
-<div class="blog-index">
-  
-  
-  
-    <article>
-      
-
-  <div class="row-fluid">
-    <div class="span2">
-		<h1 class="date-time">
-
-
-
-
-
-
-
-
-  
-
-
-<i class="icon-calendar-empty"></i> <time datetime="2013-09-22T12:57:00+01:00" pubdate data-updated="true">Sep 22<span>nd</span>, 2013</time></h5>
-          <div class="row-fluid">
-          
-          </div>
-          
-          <div class="row-fluid">
-          
-          <a href="/blog/categories/coding/"><span class="badge">coding</span></a>
-          
-          <a href="/blog/categories/education/"><span class="badge">education</span></a>
-          
-          </div>
-          
-    </div>
-    <div class="span10">
-      <h1 class="link"><a href="/blog/2013/09/22/those-who-cant-do/">Those who can&#8217;t do&#8230;</a></h1>
-      <p><em>This is an old blog post I started writing about a month ago but never got a chance to finish it. I&rsquo;m not sure I agree with everything I&rsquo;ve said in it but will post it here and hopefully build on it at a later date.</em></p>
+  <entry>
+    <title type="html"><![CDATA[Those who can't do...]]></title>
+    <link href="http://maxehmookau.github.io/blog/2013/09/22/those-who-cant-do/"/>
+    <updated>2013-09-22T12:57:00+01:00</updated>
+    <id>http://maxehmookau.github.io/blog/2013/09/22/those-who-cant-do</id>
+    <content type="html"><![CDATA[<p><em>This is an old blog post I started writing about a month ago but never got a chance to finish it. I&rsquo;m not sure I agree with everything I&rsquo;ve said in it but will post it here and hopefully build on it at a later date.</em></p>
 
 <blockquote><p>Those who can&rsquo;t do, teach. Those who can&rsquo;t teach, teach P.E.</p></blockquote>
 
@@ -206,54 +92,15 @@ I spent a lot of time at university discussing the pros and cons of teaching OOP
 
 
 <p>This may all seem very obvious, but to someone just learning how to program, this is a <strong>totally different thought process</strong> than the first example of &lsquo;scripting&rsquo;. You cannot expect someone who has grasped the ideas in the first example to automatically be able to understand the ideas presented in the second and third. However, those are the skills that are really used day-to-day by most programmers. So why would we teach kids anything else?</p>
-
-      
-      
-    </div>
-  </div>
-
-
-
-    </article>
-    
-    <hr>
-    
+]]></content>
+  </entry>
   
-  
-    <article>
-      
-
-  <div class="row-fluid">
-    <div class="span2">
-		<h1 class="date-time">
-
-
-
-
-
-
-
-
-  
-
-
-<i class="icon-calendar-empty"></i> <time datetime="2013-08-13T21:42:00+01:00" pubdate data-updated="true">Aug 13<span>th</span>, 2013</time></h5>
-          <div class="row-fluid">
-          
-          </div>
-          
-          <div class="row-fluid">
-          
-          <a href="/blog/categories/code/"><span class="badge">code</span></a>
-          
-          <a href="/blog/categories/yrs2013/"><span class="badge">yrs2013</span></a>
-          
-          </div>
-          
-    </div>
-    <div class="span10">
-      <h1 class="link"><a href="/blog/2013/08/13/these-kids-are-crazy-smart-dot-dot-dot/">These kids are crazy smart&#8230;</a></h1>
-      <p>I just spent a week as a Young Rewired State mentor at work. We hosted 20 kids between the age of 8-17 in a week of code which culminated in the weekend Festival of Code in which the best projects won prizes!</p>
+  <entry>
+    <title type="html"><![CDATA[These kids are crazy smart...]]></title>
+    <link href="http://maxehmookau.github.io/blog/2013/08/13/these-kids-are-crazy-smart-dot-dot-dot/"/>
+    <updated>2013-08-13T21:42:00+01:00</updated>
+    <id>http://maxehmookau.github.io/blog/2013/08/13/these-kids-are-crazy-smart-dot-dot-dot</id>
+    <content type="html"><![CDATA[<p>I just spent a week as a Young Rewired State mentor at work. We hosted 20 kids between the age of 8-17 in a week of code which culminated in the weekend Festival of Code in which the best projects won prizes!</p>
 
 <h2><strong>It was awesome!</strong></h2>
 
@@ -310,54 +157,15 @@ This team also just implemented a collaborative workflow using git. They are tee
 <p>Personally, I learnt a lot. Firstly, that these kids are crazy smart. And that there is a lot of them that clearly aren&rsquo;t getting the education they deserve from their schools. Their teachers can&rsquo;t help them code because they don&rsquo;t know how to code themselves. Amazing as YRS was (and I hope they carry on!), it&rsquo;s almost a shame that it has to exist. The skills that these kids learnt during the week shouldn&rsquo;t be provided by me or other mentors like me. The education system should provide it. YRS should be as well as a proper education in programming and computational thinking not instead of as is so often the case.</p>
 
 <p>Also, I learnt that I don&rsquo;t want kids yet. They&rsquo;re hard work. You&rsquo;re welcome mum.</p>
-
-      
-      
-    </div>
-  </div>
-
-
-
-    </article>
-    
-    <hr>
-    
+]]></content>
+  </entry>
   
-  
-    <article>
-      
-
-  <div class="row-fluid">
-    <div class="span2">
-		<h1 class="date-time">
-
-
-
-
-
-
-
-
-  
-
-
-<i class="icon-calendar-empty"></i> <time datetime="2013-07-12T18:11:00+01:00" pubdate data-updated="true">Jul 12<span>th</span>, 2013</time></h5>
-          <div class="row-fluid">
-          
-          </div>
-          
-          <div class="row-fluid">
-          
-          <a href="/blog/categories/geek/"><span class="badge">geek</span></a>
-          
-          <a href="/blog/categories/work/"><span class="badge">work</span></a>
-          
-          </div>
-          
-    </div>
-    <div class="span10">
-      <h1 class="link"><a href="/blog/2013/07/12/im-a-geek-now/">Let&#8217;s Teach Kids to Code!</a></h1>
-      <p>All of a sudden, programming is trendy. Politicians, teachers and industry all want kids to learn to code. All I can say is <strong>YAY!</strong></p>
+  <entry>
+    <title type="html"><![CDATA[Let's Teach Kids to Code!]]></title>
+    <link href="http://maxehmookau.github.io/blog/2013/07/12/im-a-geek-now/"/>
+    <updated>2013-07-12T18:11:00+01:00</updated>
+    <id>http://maxehmookau.github.io/blog/2013/07/12/im-a-geek-now</id>
+    <content type="html"><![CDATA[<p>All of a sudden, programming is trendy. Politicians, teachers and industry all want kids to learn to code. All I can say is <strong>YAY!</strong></p>
 
 <p>So you&rsquo;re a teacher with a semi-interest in computers and therefore you should be leading the charge by teaching kids to code. Again <strong>YAY!</strong> except, errrr&hellip; you don&rsquo;t know how to code, do you? Ok, first move, buy 30 Raspberry Pis. Surely it&rsquo;s easy&hellip; Nope, wrong again!</p>
 
@@ -372,50 +180,15 @@ This team also just implemented a collaborative workflow using git. They are tee
 <p>I&rsquo;ve had the pleasure of working with children of all ages (8-18) recently and let me tell you. These kids are smart. In some cases, they&rsquo;re smarter than the teachers! I showed a group of 18 year olds Ruby on Rails this week. We built a blog in 10 minutes. They was an audible gasp around the room when they begun to understand the power of the tools they&rsquo;re <strong>not being taught to use at school.</strong></p>
 
 <p>I know the reason kids aren&rsquo;t learning code isn&rsquo;t out of political malice, it&rsquo;s partly down to lack of funding (isn&rsquo;t everything?) and most importantly a lack of understanding of the importance of these skills by those who set the curriculums. I bet Michael Gove can&rsquo;t code, he just gets someone else to make his software. It&rsquo;s excellent to see strides being made in Wales recently, I just hope it continues.</p>
-
-      
-      
-    </div>
-  </div>
-
-
-
-    </article>
-    
-    <hr>
-    
+]]></content>
+  </entry>
   
-  
-    <article>
-      
-
-  <div class="row-fluid">
-    <div class="span2">
-		<h1 class="date-time">
-
-
-
-
-
-
-
-
-  
-
-
-<i class="icon-calendar-empty"></i> <time datetime="2013-06-17T21:18:00+01:00" pubdate data-updated="true">Jun 17<span>th</span>, 2013</time></h5>
-          <div class="row-fluid">
-          
-          </div>
-          
-          <div class="row-fluid">
-          
-          </div>
-          
-    </div>
-    <div class="span10">
-      <h1 class="link"><a href="/blog/2013/06/17/the-chunky-coders-guide-to-losing-weight/">The Chunky Coder&#8217;s Guide to Losing Weight</a></h1>
-      <h3>Some background&hellip;</h3>
+  <entry>
+    <title type="html"><![CDATA[The Chunky Coder's Guide to Losing Weight]]></title>
+    <link href="http://maxehmookau.github.io/blog/2013/06/17/the-chunky-coders-guide-to-losing-weight/"/>
+    <updated>2013-06-17T21:18:00+01:00</updated>
+    <id>http://maxehmookau.github.io/blog/2013/06/17/the-chunky-coders-guide-to-losing-weight</id>
+    <content type="html"><![CDATA[<h3>Some background&hellip;</h3>
 
 <p>During my three years of being a Computer Science student, I got fat. Like, properly fat. I blame it on a poor diet, no exercise and being a lazy bastard. Mostly because it was my poor diet, lack of exercise and general laziness than caused my BMI to increase from 22 (ideal) to 30 (obese). (I&rsquo;m 5&#8221; 10&#8217;)</p>
 
@@ -554,50 +327,15 @@ Let me spell it out to you in a way you&rsquo;ll understand.</p>
 Use something like Trendweight to track your weight too. It filters outliers and only shows your general trend. So if you have a fat day, it won&rsquo;t totally demoralise you.</p>
 
 <p>If you&rsquo;re a software developer who&rsquo;s doing the same thing as me and trying desperate to lose weight. Don&rsquo;t lose heart. You&rsquo;ll get there. But I <strong>really</strong> miss dominos pizza.</p>
-
-      
-      
-    </div>
-  </div>
-
-
-
-    </article>
-    
-    <hr>
-    
+]]></content>
+  </entry>
   
-  
-    <article>
-      
-
-  <div class="row-fluid">
-    <div class="span2">
-		<h1 class="date-time">
-
-
-
-
-
-
-
-
-  
-
-
-<i class="icon-calendar-empty"></i> <time datetime="2013-05-27T11:18:00+01:00" pubdate data-updated="true">May 27<span>th</span>, 2013</time></h5>
-          <div class="row-fluid">
-          
-          </div>
-          
-          <div class="row-fluid">
-          
-          </div>
-          
-    </div>
-    <div class="span10">
-      <h1 class="link"><a href="/blog/2013/05/27/is-web-scraping-ethical/">Is Web Scraping Ethical?</a></h1>
-      <p>Last week I released the UkBuses Ruby Gem. It scrapes real-time data from the Traveline site and allows developers to use the data returned as a Hash.  It quickly became the second most weekly starred Ruby repo on GitHub and sparked some interesting debate on Hacker News. There&rsquo;s strong feelings on both sides of the debate but basically no legal precident on the subject. After debating it with friends and collegues, it&rsquo;s clear that nobody really knows. First of all, let&rsquo;s make the question up for debate very clear:</p>
+  <entry>
+    <title type="html"><![CDATA[Is Web Scraping Ethical?]]></title>
+    <link href="http://maxehmookau.github.io/blog/2013/05/27/is-web-scraping-ethical/"/>
+    <updated>2013-05-27T11:18:00+01:00</updated>
+    <id>http://maxehmookau.github.io/blog/2013/05/27/is-web-scraping-ethical</id>
+    <content type="html"><![CDATA[<p>Last week I released the UkBuses Ruby Gem. It scrapes real-time data from the Traveline site and allows developers to use the data returned as a Hash.  It quickly became the second most weekly starred Ruby repo on GitHub and sparked some interesting debate on Hacker News. There&rsquo;s strong feelings on both sides of the debate but basically no legal precident on the subject. After debating it with friends and collegues, it&rsquo;s clear that nobody really knows. First of all, let&rsquo;s make the question up for debate very clear:</p>
 
 <p><strong>Should it be OK, both legally and morally, for someone to download the HTML output of a <em>non-authenticated</em> webpage and convert it to a format that makes it more easily usable for <em>non-commercial purposes</em>?</strong></p>
 
@@ -640,50 +378,15 @@ Use something like Trendweight to track your weight too. It filters outliers and
 <p>Central and local government in the UK is opening up more and more data because they have realised that it creates accountability. I would argue that where there is a strong public interest (I hate that phrase.), certain companies should be compelled to open such data. Public transport should fall in to that category.</p>
 
 <p>Yes, I know that the data <em>is</em> technically available. As long as you fill out a lengthy form, comply with various rules and in some cases <em>provide a deposit</em> for any &lsquo;damages&rsquo; caused by whatever your application of the data happens to be. The documentation is in huge PDF files with lengthy examples for how to retrieve the data. This is <strong>boring</strong> and stifles innovation. Coders like data streams to play around with, it&rsquo;s part of the fun of coding. Companies with a strong interest in the general public should understand this and embrace it.</p>
-
-      
-      
-    </div>
-  </div>
-
-
-
-    </article>
-    
-    <hr>
-    
+]]></content>
+  </entry>
   
-  
-    <article>
-      
-
-  <div class="row-fluid">
-    <div class="span2">
-		<h1 class="date-time">
-
-
-
-
-
-
-
-
-  
-
-
-<i class="icon-calendar-empty"></i> <time datetime="2013-05-06T15:19:00+01:00" pubdate data-updated="true">May 6<span>th</span>, 2013</time></h5>
-          <div class="row-fluid">
-          
-          </div>
-          
-          <div class="row-fluid">
-          
-          </div>
-          
-    </div>
-    <div class="span10">
-      <h1 class="link"><a href="/blog/2013/05/06/running-ios-unit-tests-automatically-using-ocunit-and-xctool/">Running iOS Unit Tests Automatically Using OCUnit and xctool</a></h1>
-      <p><a href="https://github.com/facebook/xctool">xctool</a> is a new command line tool from Facebook which it claims makes running XCode tests much simpler. <strong>I agree.</strong> Up until now, Apple have still not given developers a simple way to automate running tests at the command line which makes testing a pain and makes continuous integration even more of a pain. It&rsquo;s not impossible, but it&rsquo;s not as simple as it should be.</p>
+  <entry>
+    <title type="html"><![CDATA[Running iOS Unit Tests Automatically Using OCUnit and xctool]]></title>
+    <link href="http://maxehmookau.github.io/blog/2013/05/06/running-ios-unit-tests-automatically-using-ocunit-and-xctool/"/>
+    <updated>2013-05-06T15:19:00+01:00</updated>
+    <id>http://maxehmookau.github.io/blog/2013/05/06/running-ios-unit-tests-automatically-using-ocunit-and-xctool</id>
+    <content type="html"><![CDATA[<p><a href="https://github.com/facebook/xctool">xctool</a> is a new command line tool from Facebook which it claims makes running XCode tests much simpler. <strong>I agree.</strong> Up until now, Apple have still not given developers a simple way to automate running tests at the command line which makes testing a pain and makes continuous integration even more of a pain. It&rsquo;s not impossible, but it&rsquo;s not as simple as it should be.</p>
 
 <p>xctool is a replacement for <code>xcodebuild</code> with a few extra handy features. I&rsquo;m going to show you how to add this to your iOS/OSX project to greatly increase productivity and make testing more fun!</p>
 
@@ -752,52 +455,15 @@ $ touch Gemfile
 </code></pre>
 
 <p>and you&rsquo;re all set. Try opening your XCode project and making a change to a file. Then just watch your command line automatically run all of the tests in your project. No more clicking in XCode, clever huh?</p>
-
-      
-      
-    </div>
-  </div>
-
-
-
-    </article>
-    
-    <hr>
-    
+]]></content>
+  </entry>
   
-  
-    <article>
-      
-
-  <div class="row-fluid">
-    <div class="span2">
-		<h1 class="date-time">
-
-
-
-
-
-
-
-
-  
-
-
-<i class="icon-calendar-empty"></i> <time datetime="2013-05-04T18:11:00+01:00" pubdate data-updated="true">May 4<span>th</span>, 2013</time></h5>
-          <div class="row-fluid">
-          
-          </div>
-          
-          <div class="row-fluid">
-          
-          <a href="/blog/categories/ios/"><span class="badge">ios</span></a>
-          
-          </div>
-          
-    </div>
-    <div class="span10">
-      <h1 class="link"><a href="/blog/2013/05/04/getting-to-grips-with-core-data/">Getting to grips with Core Data</a></h1>
-      <p>Most iOS developers will agree, <em>Core Data is <strong>hard</strong></em>. The majority (myself included) will wimp out and go and use SQLite, key-value stores in iCloud or just avoid data persistence all together. But I thought I would finally get over the mental block I had over Core Data and just learn how it works.</p>
+  <entry>
+    <title type="html"><![CDATA[Getting to grips with Core Data]]></title>
+    <link href="http://maxehmookau.github.io/blog/2013/05/04/getting-to-grips-with-core-data/"/>
+    <updated>2013-05-04T18:11:00+01:00</updated>
+    <id>http://maxehmookau.github.io/blog/2013/05/04/getting-to-grips-with-core-data</id>
+    <content type="html"><![CDATA[<p>Most iOS developers will agree, <em>Core Data is <strong>hard</strong></em>. The majority (myself included) will wimp out and go and use SQLite, key-value stores in iCloud or just avoid data persistence all together. But I thought I would finally get over the mental block I had over Core Data and just learn how it works.</p>
 
 <p>I&rsquo;m far from an expert at this point, I&rsquo;ve had 2 days to get my head around the basics and so far I&rsquo;m impressed. Here&rsquo;s what I&rsquo;ve learnt, hopefully it may be useful.</p>
 
@@ -849,60 +515,7 @@ Say we have two entities: <code>Organisation</code> and <code>Person</code>. Whe
 <p>There have been numerous blog posts about how iCloud doesn&rsquo;t <em>&lsquo;just work&rsquo;</em> like Apple promised it would. Developers were hoping for Core Data stores just to be synced across devices without any problem, apparently that hasn&rsquo;t happened. iOS 7 may answer some of those issues, but we will have to wait and see.</p>
 
 <p>I&rsquo;m still learning a lot about Core Data and there is much left to learn.</p>
-
-      
-      
-    </div>
-  </div>
-
-
-
-    </article>
-    
+]]></content>
+  </entry>
   
-  <div class="pagination">
-    
-
-    
-  </div>
-</div>
-
-
-        </div>
-      </div>
-      <div class="row-fluid">
-        <footer class="footer-page" role="contentinfo">
-          <p>
-  Copyright &copy; 2013 - Max -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span> - Theme by <a href="http://alexgaribay.com">Alex Garibay</a>
-</p>
-
-
-        </footer>
-      </div>
-    </div>
-  </div>
-  
-
-
-
-
-
-
-
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
-
-
-
-
-
-</body>
-</html>
+</feed>

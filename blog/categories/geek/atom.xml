@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: geek | My Octopress Blog]]></title>
+  <link href="http://maxehmookau.github.io/blog/categories/geek/atom.xml" rel="self"/>
+  <link href="http://maxehmookau.github.io/"/>
+  <updated>2013-09-22T14:31:01+01:00</updated>
+  <id>http://maxehmookau.github.io/</id>
+  <author>
+    <name><![CDATA[Max]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Let's Teach Kids to Code!]]></title>
+    <link href="http://maxehmookau.github.io/blog/2013/07/12/im-a-geek-now/"/>
+    <updated>2013-07-12T18:11:00+01:00</updated>
+    <id>http://maxehmookau.github.io/blog/2013/07/12/im-a-geek-now</id>
+    <content type="html"><![CDATA[<p>All of a sudden, programming is trendy. Politicians, teachers and industry all want kids to learn to code. All I can say is <strong>YAY!</strong></p>
+
+<p>So you&rsquo;re a teacher with a semi-interest in computers and therefore you should be leading the charge by teaching kids to code. Again <strong>YAY!</strong> except, errrr&hellip; you don&rsquo;t know how to code, do you? Ok, first move, buy 30 Raspberry Pis. Surely it&rsquo;s easy&hellip; Nope, wrong again!</p>
+
+<p>Ok, step back. You need to think this through. Your intentions may be good, but if you&rsquo;re not teaching it right, is it worth doing? I would argue, probably not. Not yet anyway! We don&rsquo;t let people that aren&rsquo;t good at things impart their (non-existant) knowledge to people looking for the knowledge, that seems obvious.</p>
+
+<p>Quite rightly, teachers need a degree in the subject that they teach at secondary level. Out of 27,000 teachers that graduated in 2010, three had a computer science degree. <strong>THREE!!!</strong> So what makes the rest of them qualified to teach programming? In my experience, to teach something you can&rsquo;t simply be ok at a topic, you have to understand it at its most basic level so that you can fend off any questions and explain any concepts to the most inquistive of minds. That&rsquo;s what makes the difference between a good teacher and a great teacher.</p>
+
+<p><strong>I don&rsquo;t believe we can just take our stock of ICT teachers and make them coders to the level where they are comfortable teaching it.</strong> This is the real issue.</p>
+
+<p>ICT is computer literacy. This is important but it has <strong>very little place in our schools!</strong> Many, many children gain this literacy all day, everyday. <strong>Software is intuative! We don&rsquo;t need to teach children to use Microsoft Word, we need to teach children <em>why</em> Microsoft Word is easy to use and why they just instinctively know how to use it.</strong> We need teachers that know their classes from their functions and their abstract classes from their loops. Programmers are grown in their bedrooms now, not at school. If technology is the future, we need to fix this!</p>
+
+<p>I&rsquo;ve had the pleasure of working with children of all ages (8-18) recently and let me tell you. These kids are smart. In some cases, they&rsquo;re smarter than the teachers! I showed a group of 18 year olds Ruby on Rails this week. We built a blog in 10 minutes. They was an audible gasp around the room when they begun to understand the power of the tools they&rsquo;re <strong>not being taught to use at school.</strong></p>
+
+<p>I know the reason kids aren&rsquo;t learning code isn&rsquo;t out of political malice, it&rsquo;s partly down to lack of funding (isn&rsquo;t everything?) and most importantly a lack of understanding of the importance of these skills by those who set the curriculums. I bet Michael Gove can&rsquo;t code, he just gets someone else to make his software. It&rsquo;s excellent to see strides being made in Wales recently, I just hope it continues.</p>
+]]></content>
+  </entry>
+  
+</feed>

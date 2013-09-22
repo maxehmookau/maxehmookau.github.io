@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: ios | My Octopress Blog]]></title>
+  <link href="http://maxehmookau.github.io/blog/categories/ios/atom.xml" rel="self"/>
+  <link href="http://maxehmookau.github.io/"/>
+  <updated>2013-09-22T14:31:01+01:00</updated>
+  <id>http://maxehmookau.github.io/</id>
+  <author>
+    <name><![CDATA[Max]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Getting to grips with Core Data]]></title>
+    <link href="http://maxehmookau.github.io/blog/2013/05/04/getting-to-grips-with-core-data/"/>
+    <updated>2013-05-04T18:11:00+01:00</updated>
+    <id>http://maxehmookau.github.io/blog/2013/05/04/getting-to-grips-with-core-data</id>
+    <content type="html"><![CDATA[<p>Most iOS developers will agree, <em>Core Data is <strong>hard</strong></em>. The majority (myself included) will wimp out and go and use SQLite, key-value stores in iCloud or just avoid data persistence all together. But I thought I would finally get over the mental block I had over Core Data and just learn how it works.</p>
+
+<p>I&rsquo;m far from an expert at this point, I&rsquo;ve had 2 days to get my head around the basics and so far I&rsquo;m impressed. Here&rsquo;s what I&rsquo;ve learnt, hopefully it may be useful.</p>
+
+<ul>
+<li><strong>Core Data is NOT an ORM</strong>.</li>
+</ul>
+
+
+<p>Admittedly, it&rsquo;s pretty close and it functions a lot like an ORM. But technically, it is a <em>object graph management framework</em>. If you expect to behave exactly like an ORM, you&rsquo;re most likely going to be disappointed. There&rsquo;s no ActiveRecord-style <code>Post.all</code> method to just yank out all records of a certain class.
+It differs from an ORM because of its strengths. It is able to deal with potentially <em>huge</em> graphs of related entities with only a limited amount of memory as is often found on mobile devices. (Though less so with the iPhone these days&hellip;) It does this by &lsquo;faulting&rsquo; data in and out of memory. Let me give you an example:
+Say we have two entities: <code>Organisation</code> and <code>Person</code>. When retrieving a list of <code>Organisation</code> objects, Core Data will retrieve the list in to memory. It is possible to retrieve the list of <code>People</code> objects in an <code>Organisation</code> <em>even though</em> those people are not actually in memory yet. Core Data <em>&lsquo;faults&rsquo;</em> and retrieves the list of objects in the stated relation, loading only what is needed in to memory at any one time. This approach is <strong>awesome</strong> for low-memory devices.</p>
+
+<ul>
+<li><strong>Core Data isn&rsquo;t <em>just</em> an SQLite database</strong></li>
+</ul>
+
+
+<p>Yes, Core Data does use SQLite as its backing storage and in debug mode, you can see the raw SQL statements performed on the database, but don&rsquo;t be fooled, this is simply an implementation detail. The schema may change, unlike the Core Data API. Open up the database and take a look; on large object graphs, it may not look as you expect. Core Data saves the data however it thinks is most efficient, it&rsquo;s not designed for human-readability at the database level.</p>
+
+<ul>
+<li><strong>XCode does a lot of the hard-work for you</strong></li>
+</ul>
+
+
+<p>There&rsquo;s a lot of boilerplate code to set up a Core Data stack. But XCode handles this for you, just tick the &lsquo;<strong>Use Core Data</strong>&rsquo; box in XCode and you won&rsquo;t need to worry too much about it. It creates a <strong>Persistant Object Store</strong>, <strong>Managed Object Model</strong> and all that gubbins in your <code>AppDelegate.m</code> file so you can access it à la:</p>
+
+<p>```objective-c Get hold of a ManagedObjectContext from your AppDelegate</p>
+
+<pre><code>// At the top of your ViewController
+#import "AppDelegate.h"
+
+// When the ViewController is initialised...
+AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+[appDelegate managedObjectContext];
+// Assigning your AppDelegate in the first step removes the need for casting.
+</code></pre>
+
+<p>```</p>
+
+<ul>
+<li><strong>Core Data and iCloud don&rsquo;t appear to play nice, yet</strong></li>
+</ul>
+
+
+<p>There have been numerous blog posts about how iCloud doesn&rsquo;t <em>&lsquo;just work&rsquo;</em> like Apple promised it would. Developers were hoping for Core Data stores just to be synced across devices without any problem, apparently that hasn&rsquo;t happened. iOS 7 may answer some of those issues, but we will have to wait and see.</p>
+
+<p>I&rsquo;m still learning a lot about Core Data and there is much left to learn.</p>
+]]></content>
+  </entry>
+  
+</feed>

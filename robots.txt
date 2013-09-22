@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://maxehmookau.github.io/sitemap.xml 

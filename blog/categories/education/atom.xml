@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: education | My Octopress Blog]]></title>
+  <link href="http://maxehmookau.github.io/blog/categories/education/atom.xml" rel="self"/>
+  <link href="http://maxehmookau.github.io/"/>
+  <updated>2013-09-22T14:31:01+01:00</updated>
+  <id>http://maxehmookau.github.io/</id>
+  <author>
+    <name><![CDATA[Max]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Those who can't do...]]></title>
+    <link href="http://maxehmookau.github.io/blog/2013/09/22/those-who-cant-do/"/>
+    <updated>2013-09-22T12:57:00+01:00</updated>
+    <id>http://maxehmookau.github.io/blog/2013/09/22/those-who-cant-do</id>
+    <content type="html"><![CDATA[<p><em>This is an old blog post I started writing about a month ago but never got a chance to finish it. I&rsquo;m not sure I agree with everything I&rsquo;ve said in it but will post it here and hopefully build on it at a later date.</em></p>
+
+<blockquote><p>Those who can&rsquo;t do, teach. Those who can&rsquo;t teach, teach P.E.</p></blockquote>
+
+<p>Not that I ever agreed with this statement (the first half of it anyway; I had some pretty dire P.E. teachers), but when put in the context of programming, never has a more untrue phrase been uttered. When I refer to programming in this post, I&rsquo;m talking about the process of solving a problem by writing code, not software development in its wider context.</p>
+
+<p>My previous two posts have been comments/rants on the state of education and some school&rsquo;s totally inability to teach children how to program. This post seeks to actually provide some constructive ideas on what could be done about it by looking at how programming can be &lsquo;taught&rsquo;. Ask any Computer Science undergraduate <em>&ldquo;How did you get in to programming?&rdquo;</em>, and I guarantee that a tiny, tiny, minority will say <em>&ldquo;I learnt x language at school&rdquo;</em>. Those that do say that, will even more rarely have come from a comprehensive school background.</p>
+
+<p>It&rsquo;s all very well to say we&rsquo;re going to address this, but &lsquo;coding&rsquo; isn&rsquo;t one skill that can be taught. It&rsquo;s a combination of skills ranging from critical thinking, problem solving and sometimes just a bit of dumb luck. Let&rsquo;s assume that we have a class of children, all of whom are fairly bright and posess good problem solving skills and all have an active interest in learning to code. <em>I realise this is a massive assumption, but you have to start somewhere, right?</em> <strong>What next?</strong></p>
+
+<p>Starting from nothing, it&rsquo;s often very tempting to dive in to &lsquo;scripting&rsquo;. In other words, writing a set of commands in any language, executed one after another to achieve a task, like this:</p>
+
+<p>```ruby</p>
+
+<pre><code>x = 10
+x + 100
+output x
+=&gt; 110
+</code></pre>
+
+<p>```</p>
+
+<p>Do line 1, line 2, line 3, get line 4&hellip;. etc.
+This is the easiest type of coding to teach and the easiest to learn, despite this type of code being used almost <strong>never in practice</strong>. Unless you&rsquo;re an über-hipster writing all your code in some snazzy functional languauge, the majority of code these days is written in Object-Orientated Languages (OO) such as Java, Ruby, Objective-C and sometimes PHP.
+I spent a lot of time at university discussing the pros and cons of teaching OOP to university-age students <em>first</em> instead of teaching them to script first and we largely agreed that using an &lsquo;objects first&rsquo; approach was generally a good thing, especially for the 18+ age group. Although this conclusion wasn&rsquo;t reached by all people in this group. I however, saw no reason why this should not be extended to younger kids. Explain coding to them as a way of expressing &lsquo;things&rsquo; as code, and you might be on to something.</p>
+
+<p>Explain that we can create templates, take a car for example. All cars have a set of attributes, these attributes are the same, but their values are often different. Cars can also all do the same set of things: open the boot, get spray painted, go forward, but how they do it depends on their individual attributes.</p>
+
+<p>```ruby A Car in pseudocode</p>
+
+<pre><code>class Car
+    var make
+    var model
+    var colour
+    var no_of_doors
+
+    function paint(new_colour)
+        colour = new_colour
+    end
+end
+</code></pre>
+
+<p>```</p>
+
+<p>```ruby Using a Car in pseudocode</p>
+
+<pre><code>car = new Car
+car.make = 'Nissan'
+car.model = 'Note'
+car.colour = 'Blue'
+car.no_of_doors = 5
+car.paint('Orange')
+car.colour
+=&gt; 'Orange'
+</code></pre>
+
+<p>```</p>
+
+<p>This may all seem very obvious, but to someone just learning how to program, this is a <strong>totally different thought process</strong> than the first example of &lsquo;scripting&rsquo;. You cannot expect someone who has grasped the ideas in the first example to automatically be able to understand the ideas presented in the second and third. However, those are the skills that are really used day-to-day by most programmers. So why would we teach kids anything else?</p>
+]]></content>
+  </entry>
+  
+</feed>

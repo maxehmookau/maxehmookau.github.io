@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Running iOS Unit Tests Automatically Using OCUnit and xctool - My Octopress Blog</title>
+  <meta name="author" content="Max">
+
+  
+  <meta name="description" content="Running iOS Unit Tests Automatically Using OCUnit and Xctool May 6th, 2013 xctool is a new command line tool from Facebook which it claims makes &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://maxehmookau.github.io/blog/2013/05/06/running-ios-unit-tests-automatically-using-ocunit-and-xctool">
+  <link href="/favicon.png" rel="icon">
+  <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <script src="/js/jquery.js"></script>
+  <script src="/js/bootstrap-collapse.js"></script>
+  <script src="/js/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/js/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-43177900-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <div class="navbar navbar-inverse navbar-static-top">
+  	<div class="navbar-inner">
+  	  <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+          <span class="fui-menu-24"></span>
+        </a>
+  	  	<div class="nav-collapse collapse navbar-responsive-collapse" style="height:0;">
+  	      <ul class="nav">
+    
+        <li ><a href="/index.html">Blog</a></li>
+    
+        <li ><a href="/about.html">About</a></li>
+    
+</ul>
+
+<ul class="nav pull-right">
+    
+    <li><a href="http://github.com/maxehmookau" title="Github Profile"><i class="icon-github-sign social-navbar"></i></a></li>
+    
+    
+    
+    <li><a href="http://twitter.com/maxehmookau" title="Twitter Profile"><i class="icon-twitter-sign social-navbar"></i></a></li>
+    
+    
+    
+    
+</ul>
+
+  	    </div>
+  	  </div>
+  	</div>
+  </div>
+  <div class="container" id="main">
+    <div class="span12">
+      <div class="row-fluid">
+        <div id="content">
+          <div>
+<article class="hentry" role="article">
+  
+
+  <header>
+  <div class="jumbotron">
+    Running iOS Unit Tests Automatically Using OCUnit and Xctool
+	<h5>
+
+
+
+
+
+
+
+
+  
+
+
+<i class="icon-calendar-empty"></i> <time datetime="2013-05-06T15:19:00+01:00" pubdate data-updated="true">May 6<span>th</span>, 2013</time></h5>
+  </div>
+</header>
+  <div class="row-fluid">
+    <div class="span12">
+      <p><a href="https://github.com/facebook/xctool">xctool</a> is a new command line tool from Facebook which it claims makes running XCode tests much simpler. <strong>I agree.</strong> Up until now, Apple have still not given developers a simple way to automate running tests at the command line which makes testing a pain and makes continuous integration even more of a pain. It&rsquo;s not impossible, but it&rsquo;s not as simple as it should be.</p>
+
+<p>xctool is a replacement for <code>xcodebuild</code> with a few extra handy features. I&rsquo;m going to show you how to add this to your iOS/OSX project to greatly increase productivity and make testing more fun!</p>
+
+<p>You&rsquo;ll need the following before we get started:</p>
+
+<ul>
+<li>Ruby 1.9.3</li>
+<li>Bundler</li>
+</ul>
+
+
+<p>Yeah, you heard me. <em>Ruby</em>. We can use the <code>guard</code> gem to watch to changes to our project and then fire off a build in the command line. It&rsquo;s as simple as that. Firstly, we need to create a <code>Gemfile</code> in the root of our project.</p>
+
+<pre><code>$ cd /root/of/xcode/project
+$ touch Gemfile
+</code></pre>
+
+<p>Open up the <code>Gemfile</code> and add the following:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='objective-c'><span class='line'><span class="n">source</span> <span class="o">:</span><span class="n">rubygems</span>
+</span><span class='line'><span class="n">gem</span> <span class="err">&#39;</span><span class="n">guard</span><span class="err">&#39;</span>
+</span><span class='line'><span class="n">gem</span> <span class="err">&#39;</span><span class="n">guard</span><span class="o">-</span><span class="n">shell</span><span class="err">&#39;</span>
+</span><span class='line'><span class="n">gem</span> <span class="err">&#39;</span><span class="n">fsevent</span><span class="err">&#39;</span><span class="p">,</span> <span class="err">&#39;</span><span class="o">~&gt;</span> <span class="mf">0.9</span><span class="err">&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>At the command line, run:</p>
+
+<pre><code>$ bundle install
+</code></pre>
+
+<p>This grabs our needed gems and their dependencies. Now we&rsquo;re ready for business.</p>
+
+<p>With <code>guard</code> installed, run <code>guard init shell</code> at the command line. This will create a sample <code>Guardfile</code> to get us started. The <code>Guardfile</code> lists what files to watch for changes and what actions to take when changes are detected.</p>
+
+<p>Open up the <code>Guardfile</code> and add the following lines, I&rsquo;ll run through what they do in a minute:</p>
+
+<figure class='code'><figcaption><span>Guardfile</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">guard</span> <span class="s1">&#39;shell&#39;</span> <span class="k">do</span>
+</span><span class='line'>  <span class="n">watch</span><span class="p">(</span><span class="sr">/(.*).(m|h|mm|hh)/</span><span class="p">)</span> <span class="k">do</span>
+</span><span class='line'>    <span class="nb">puts</span> <span class="s2">&quot;Change detected. Running tests...&quot;</span>
+</span><span class='line'>    <span class="sb">`../xctool/xctool.sh -project ProjectName.xcodeproj -scheme SchemeName test -reporter plain`</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Line 1: <code>guard 'shell' do</code> tells guard to use the <code>shell</code> plugin we included in our <code>Gemfile</code>.</p>
+
+<p>Line 2: This line watches our source files for changes. XCode includes lots of files, many of which change a lot and we don&rsquo;t want to run our tests everytime those files change. (You might want to, I&rsquo;m assuming you don&rsquo;t.) This is just a regular expression which looks at <em>any</em> file that ends with .h, .m, .hh, or .mm (for you Objective-C++ users out there.)</p>
+
+<p>Lines 3 and 4 alert the user that a file has changed, and line 4 runs <code>xctool</code>. You&rsquo;ll need to change where your <code>xctool</code> is. I keep mine in the root folder of all my personal projects, I tried building a binary and adding it to <code>/usr/bin</code> but I was unable to get it working. You have to pass <code>xctool</code> the project file along with the scheme you want to build. That&rsquo;s all there is to it!</p>
+
+<p>Go to the root of your project and run:</p>
+
+<pre><code>$ guard
+</code></pre>
+
+<p>and you&rsquo;re all set. Try opening your XCode project and making a change to a file. Then just watch your command line automatically run all of the tests in your project. No more clicking in XCode, clever huh?</p>
+
+    </div>
+  </div>
+
+
+
+  <footer>
+    <hr>
+    
+    <div class="row-fluid">
+      
+      <div class="span6">
+        <p class="meta">
+        
+        
+
+
+        </p>
+      </div>
+      
+      <div class="span6 social-sharing">
+        <div class="sharing">
+  <div class="addthis_toolbox addthis_default_style ">
+  
+  
+  <a class="addthis_button_tweet"></a>
+  
+  
+  <a class="addthis_counter addthis_pill_style"></a>
+  </div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+      </div>
+      
+      
+    </div>
+    
+    <div class="row-fluid">
+      <div class="span12">
+        <p class="meta">
+          
+            <a class="basic-alignment left" href="/blog/2013/05/04/getting-to-grips-with-core-data/" title="Previous Post: Getting to grips with Core Data">&laquo; Getting to grips with Core Data</a>
+          
+          
+            <a class="basic-alignment right" href="/blog/2013/05/27/is-web-scraping-ethical/" title="Next Post: Is Web Scraping Ethical?">Is Web Scraping Ethical? &raquo;</a>
+          
+        </p>
+      </div>
+    </div>
+  </footer>
+</article>
+
+</div>
+
+
+
+        </div>
+      </div>
+      <div class="row-fluid">
+        <footer class="footer-page" role="contentinfo">
+          <p>
+  Copyright &copy; 2013 - Max -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span> - Theme by <a href="http://alexgaribay.com">Alex Garibay</a>
+</p>
+
+
+        </footer>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: code | My Octopress Blog]]></title>
+  <link href="http://maxehmookau.github.io/blog/categories/code/atom.xml" rel="self"/>
+  <link href="http://maxehmookau.github.io/"/>
+  <updated>2013-09-22T14:31:01+01:00</updated>
+  <id>http://maxehmookau.github.io/</id>
+  <author>
+    <name><![CDATA[Max]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[These kids are crazy smart...]]></title>
+    <link href="http://maxehmookau.github.io/blog/2013/08/13/these-kids-are-crazy-smart-dot-dot-dot/"/>
+    <updated>2013-08-13T21:42:00+01:00</updated>
+    <id>http://maxehmookau.github.io/blog/2013/08/13/these-kids-are-crazy-smart-dot-dot-dot</id>
+    <content type="html"><![CDATA[<p>I just spent a week as a Young Rewired State mentor at work. We hosted 20 kids between the age of 8-17 in a week of code which culminated in the weekend Festival of Code in which the best projects won prizes!</p>
+
+<h2><strong>It was awesome!</strong></h2>
+
+<p>Properly, properly awesome. I met children literally half my age who <del>had the potential</del> were already better coders than me. These kids are obviously missing skills neccessary to make it in a commercial software development environment, but that&rsquo;s hardly a failing at the age of 11.</p>
+
+<h3>Day 1</h3>
+
+<p>So Monday morning came, Day 1 of Young Rewired State. We were expecting 20 kids of varying ages to turn up. We had no idea of their skills, ability or interests. Needless to say, we were nervous. But within five minutes, my nerves had turned to excitement. We had formed four teams with four different and exciting projects. This was going to be a good week!</p>
+
+<h3>Day 2</h3>
+
+<p>Tuesday. Monday had taken it out of me. I slept for 10 hours. Suddenly my respect for teachers had quadrupled overnight.
+One of our projects, Growify, a hardware hack for monitoring the health of plants was making great strides. I had, entirely selfishly, convinced the kids that Rails was the way forwards; mainly because I could teach them how to use it rather than stare blankly at anything Javascript based.</p>
+
+<p>We also had an incident involving too much Coca Cola and a spinning chair. I&rsquo;ll say no more.</p>
+
+<h3>Day 3</h3>
+
+<p>We banned sugar/caffeine today. Water only. Was a good move.</p>
+
+<p>One of our other projects, Lighthouse, which would help position ambulances near the positions of potential crashes based on previous crash data, was making good progress. They were asking me for help on things I didn&rsquo;t fully understand. Neither did they, but they were giving it their best shot.
+This team also just implemented a collaborative workflow using git. They are teenagers! My mind was blown.</p>
+
+<p>Oh, there was also an incident involving a hamster. Again, I&rsquo;ll say no more.</p>
+
+<h3>Day 4</h3>
+
+<p>Only mild panic despite the fact that the teams had to finish their hacks today. Everyone was on target, optimism was filling the building. We were certain of at least one project in the finals! Tomorrow was Birmingham and everything had to be perfect.</p>
+
+<h3>Day 5</h3>
+
+<p>The trip to Birmingham. I have never herded 20 children on and off two trains before. I intend never to do it again (until next year). But the constant fear of possibly losing our smallest member between the <em>train and the platform edge</em> was definitely on my mind. We had arrived though and the evening promised to be full of pizza and interesting talks. I was on supervision duty. I had a pizza so I was ok with that.</p>
+
+<p>Finally saw someone give a talk on git that was aimed at kids. Spot on. Easily the quote of the weekend.</p>
+
+<blockquote><p>git status is your BFF.</p></blockquote>
+
+<h3>Day 6</h3>
+
+<p>Stayed in a hotel. Not on the floor of Millennium Point. <strong>+1</strong>. Got back to YRS to have one of the kids bound up to me:</p>
+
+<blockquote><p>I&rsquo;ve had no sleep. AND. A double espresso.</p></blockquote>
+
+<p>This was obviously going to be a good day. The afternoon came and all of our kids gave their presentations in the heats. I was so very proud of all of them. They all did the best they possibly could have done and it paid off.</p>
+
+<h3>Day 7</h3>
+
+<p>The results! One of our projects was awards a special mention and another one had an honorary mention in the Best Code category. Slightly disappointed not to have won, but the kids seemed pleased.</p>
+
+<p>I think we&rsquo;ll be back next year YRS.</p>
+
+<h3>So what?</h3>
+
+<p>Personally, I learnt a lot. Firstly, that these kids are crazy smart. And that there is a lot of them that clearly aren&rsquo;t getting the education they deserve from their schools. Their teachers can&rsquo;t help them code because they don&rsquo;t know how to code themselves. Amazing as YRS was (and I hope they carry on!), it&rsquo;s almost a shame that it has to exist. The skills that these kids learnt during the week shouldn&rsquo;t be provided by me or other mentors like me. The education system should provide it. YRS should be as well as a proper education in programming and computational thinking not instead of as is so often the case.</p>
+
+<p>Also, I learnt that I don&rsquo;t want kids yet. They&rsquo;re hard work. You&rsquo;re welcome mum.</p>
+]]></content>
+  </entry>
+  
+</feed>

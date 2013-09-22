@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Is Web Scraping Ethical? - My Octopress Blog</title>
+  <meta name="author" content="Max">
+
+  
+  <meta name="description" content="Is Web Scraping Ethical? May 27th, 2013 Last week I released the UkBuses Ruby Gem. It scrapes real-time data from the Traveline site and allows &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://maxehmookau.github.io/blog/2013/05/27/is-web-scraping-ethical">
+  <link href="/favicon.png" rel="icon">
+  <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <script src="/js/jquery.js"></script>
+  <script src="/js/bootstrap-collapse.js"></script>
+  <script src="/js/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/js/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-43177900-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <div class="navbar navbar-inverse navbar-static-top">
+  	<div class="navbar-inner">
+  	  <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+          <span class="fui-menu-24"></span>
+        </a>
+  	  	<div class="nav-collapse collapse navbar-responsive-collapse" style="height:0;">
+  	      <ul class="nav">
+    
+        <li ><a href="/index.html">Blog</a></li>
+    
+        <li ><a href="/about.html">About</a></li>
+    
+</ul>
+
+<ul class="nav pull-right">
+    
+    <li><a href="http://github.com/maxehmookau" title="Github Profile"><i class="icon-github-sign social-navbar"></i></a></li>
+    
+    
+    
+    <li><a href="http://twitter.com/maxehmookau" title="Twitter Profile"><i class="icon-twitter-sign social-navbar"></i></a></li>
+    
+    
+    
+    
+</ul>
+
+  	    </div>
+  	  </div>
+  	</div>
+  </div>
+  <div class="container" id="main">
+    <div class="span12">
+      <div class="row-fluid">
+        <div id="content">
+          <div>
+<article class="hentry" role="article">
+  
+
+  <header>
+  <div class="jumbotron">
+    Is Web Scraping Ethical?
+	<h5>
+
+
+
+
+
+
+
+
+  
+
+
+<i class="icon-calendar-empty"></i> <time datetime="2013-05-27T11:18:00+01:00" pubdate data-updated="true">May 27<span>th</span>, 2013</time></h5>
+  </div>
+</header>
+  <div class="row-fluid">
+    <div class="span12">
+      <p>Last week I released the UkBuses Ruby Gem. It scrapes real-time data from the Traveline site and allows developers to use the data returned as a Hash.  It quickly became the second most weekly starred Ruby repo on GitHub and sparked some interesting debate on Hacker News. There&rsquo;s strong feelings on both sides of the debate but basically no legal precident on the subject. After debating it with friends and collegues, it&rsquo;s clear that nobody really knows. First of all, let&rsquo;s make the question up for debate very clear:</p>
+
+<p><strong>Should it be OK, both legally and morally, for someone to download the HTML output of a <em>non-authenticated</em> webpage and convert it to a format that makes it more easily usable for <em>non-commercial purposes</em>?</strong></p>
+
+<p>There&rsquo;s two important parts to the question that I have posed:</p>
+
+<ol>
+<li><p><em>non-authenticated</em> &ndash; In other words, assume that any data to be scraped will respond to a non-authenticated HTTP request and that a typical end-user for that data has not needed to enter any sort of credentials. (OAuth, HTTP Basic or anything!)</p></li>
+<li><p><em>non-commercial</em> &ndash; The use of the data scraped should not ultimately be for the generation of revenue; profitable or not.</p></li>
+</ol>
+
+
+<p>My personal belief is that if either of the two previous conditions have been violated then there are <em>serious</em> ethical concerns that need addressing. In the case of the UKBuses gem, the data conforms to both of those conditions, <em>although there is nothing to stop someone from using the gem for commercial means.</em></p>
+
+<p>So here&rsquo;s the arguments that have been put to me and my responses to them. I don&rsquo;t claim to have the right answers and simply seek to spark debate on the subject.</p>
+
+<hr />
+
+<h2>Against</h2>
+
+<blockquote><p>&ldquo;[Company] has paid money to aggregate the data. Why do you have the right to take the data and make it available for free?&rdquo;</p></blockquote>
+
+<p>This is the strongest argument I have heard so far, effectively comparing data scraping to theft making it both illegal and immoral. However, I would only agree with this if the company who held the data made an attempt to restrict access to it by use of a paywall or other authentication. Since we have already agreed that in such cases, scraping <em>would</em> be immoral (and probably illegal.)</p>
+
+<p>However, in the case of the real-time UK bus data, the data is aggregated for the <em>sole</em> purpose of making that data available to the general public at bus stops and on the Traveline website. Therefore, one can only assume that no money has been lost that would otherwise have been made. So in this case, I would propose a counter question:</p>
+
+<blockquote><p>&ldquo;Although [company] has paid money to aggregate the data. Since the data is used on a daily basis by members of the general public, why wouldn&rsquo;t I have the right to make the data available in other formats?&rdquo;</p></blockquote>
+
+<hr />
+
+<h2>For</h2>
+
+<blockquote><p>&ldquo;By heavily restricing access to the data and providing no public API, [company] effectively shields itself from public accontability.&rdquo;</p></blockquote>
+
+<p>Public transport in the UK often gets a bad time in the press for being late. Justifiably. The UK has one of the least punctual and <a href="http://www.businessinsider.com/most-expensive-public-transit-networks-2012-9?op=1">most expensive</a> public transport systems in the world. Yet, despite central government&rsquo;s push to open up more data, the privately owned public transport companies have bucked this trend making real-time data nearly impossible to get hold of.</p>
+
+<p>It is, unfortunately, the transport companies themselves that participate in mutual back-slapping of a job well done when they themselves produce reports in to their punctuality. My old local train company claimed 90% in the last month that I used their services. As an admittedly unscientific sample, I would love to know how they got to that figure. <strong>There was a point where I could organise my day by the very fact that my train from Bournville to Birmingham New Street would be 4 minutes late.</strong></p>
+
+<p>But I digress. The point is that open data creates accountability. I would love to see someone use the UKBuses gem to aggregate data as to how late buses are and see if it matches up with the figures given by the companies themselves.</p>
+
+<p>Central and local government in the UK is opening up more and more data because they have realised that it creates accountability. I would argue that where there is a strong public interest (I hate that phrase.), certain companies should be compelled to open such data. Public transport should fall in to that category.</p>
+
+<p>Yes, I know that the data <em>is</em> technically available. As long as you fill out a lengthy form, comply with various rules and in some cases <em>provide a deposit</em> for any &lsquo;damages&rsquo; caused by whatever your application of the data happens to be. The documentation is in huge PDF files with lengthy examples for how to retrieve the data. This is <strong>boring</strong> and stifles innovation. Coders like data streams to play around with, it&rsquo;s part of the fun of coding. Companies with a strong interest in the general public should understand this and embrace it.</p>
+
+    </div>
+  </div>
+
+
+
+  <footer>
+    <hr>
+    
+    <div class="row-fluid">
+      
+      <div class="span6">
+        <p class="meta">
+        
+        
+
+
+        </p>
+      </div>
+      
+      <div class="span6 social-sharing">
+        <div class="sharing">
+  <div class="addthis_toolbox addthis_default_style ">
+  
+  
+  <a class="addthis_button_tweet"></a>
+  
+  
+  <a class="addthis_counter addthis_pill_style"></a>
+  </div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+      </div>
+      
+      
+    </div>
+    
+    <div class="row-fluid">
+      <div class="span12">
+        <p class="meta">
+          
+            <a class="basic-alignment left" href="/blog/2013/05/06/running-ios-unit-tests-automatically-using-ocunit-and-xctool/" title="Previous Post: Running iOS Unit Tests Automatically Using OCUnit and xctool">&laquo; Running iOS Unit Tests Automatically Using OCUnit and xctool</a>
+          
+          
+            <a class="basic-alignment right" href="/blog/2013/06/17/the-chunky-coders-guide-to-losing-weight/" title="Next Post: The Chunky Coder's Guide to Losing Weight">The Chunky Coder's Guide to Losing Weight &raquo;</a>
+          
+        </p>
+      </div>
+    </div>
+  </footer>
+</article>
+
+</div>
+
+
+
+        </div>
+      </div>
+      <div class="row-fluid">
+        <footer class="footer-page" role="contentinfo">
+          <p>
+  Copyright &copy; 2013 - Max -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span> - Theme by <a href="http://alexgaribay.com">Alex Garibay</a>
+</p>
+
+
+        </footer>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
