@@ -4,7 +4,7 @@
   <title><![CDATA[Category: education | My Octopress Blog]]></title>
   <link href="http://maxehmookau.github.io/blog/categories/education/atom.xml" rel="self"/>
   <link href="http://maxehmookau.github.io/"/>
-  <updated>2013-09-22T14:35:23+01:00</updated>
+  <updated>2013-11-24T21:37:39+00:00</updated>
   <id>http://maxehmookau.github.io/</id>
   <author>
     <name><![CDATA[Max]]></name>
@@ -12,6 +12,118 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Can adults learn to code?]]></title>
+    <link href="http://maxehmookau.github.io/blog/2013/11/22/can-adults-learn-to-code/"/>
+    <updated>2013-11-22T18:06:00+00:00</updated>
+    <id>http://maxehmookau.github.io/blog/2013/11/22/can-adults-learn-to-code</id>
+    <content type="html"><![CDATA[<p><strong>tl,dr</strong> Yes.</p>
+
+<p>Since becoming more involved with getting kids in to coding recently, I&rsquo;ve heard the phrase <em>&ldquo;Year 8 is too late!&rdquo;</em> quite a lot and before this week, I would&rsquo;ve agreed, mostly. It&rsquo;s harder to learn new skills when you&rsquo;re older, it&rsquo;s a well-known fact. There&rsquo;s a theory of &lsquo;<a href="http://faculty.washington.edu/chudler/plast.html">brain plasticity</a>&rsquo; which suggests that children&rsquo;s brains are much more able to learn new things than adults. Who am I to argue with scientists? <strong>But what I experienced earlier this week was truly remarkable.</strong></p>
+
+<h2>First, some context&hellip;</h2>
+
+<p>I was asked by <a href="http://cyfle.co.uk">Cyfle</a> (pronounced <em>&lsquo;cuh-fluh&rsquo;</em>, not <em>&lsquo;siffle&rsquo;</em> as I embarassingly found out) to run a 2 day course called <em>&lsquo;Building an iOS App from Start to Finish&rsquo;</em>. The course would be open to the general public and participants would have <em>zero</em> programming knowledge, although they all knew that they would be learning to code. So although they had no knowledge, they were all willing and eager to learn! (It&rsquo;s also worth noting that over half of the participants were bilingual.)</p>
+
+<p>I&rsquo;ll admit to being skeptical. If you&rsquo;re teaching adults with zero programming ability to write an iOS application, chances are you&rsquo;re thinking you might teach some simple HTML/JS framework which produces something that looks a bit like a native app. The honest truth is that <strong>my javascript skills SUCK</strong>. Big time. I can get by, but there&rsquo;s no way I&rsquo;m in any position to teach anyone anything. At this point, I have two choices.</p>
+
+<ol>
+<li>I can turn down the work. I don&rsquo;t want to do this.</li>
+<li>Teach complete programming novices how to code in Objective-C.</li>
+</ol>
+
+
+<p><img src="http://img.pandawhale.com/41359-bear-how-about-no-sOUR.jpeg" alt="Oh hell no." /></p>
+
+<p>Teach complete novices to code in Objective-C?! Seriously? I must be mad. So I gave it some thought. Before I got started, or even accepted the work, I had to decide if it was even possible to make this a success. The big questions that needed answering were:</p>
+
+<ol>
+<li>Why do experienced developers shy away from learning Objective-C? Are they things that we can overcome?</li>
+<li>Am I going to look like an idiot?</li>
+</ol>
+
+
+<p>So, <strong>question 1</strong>.</p>
+
+<h2>Why <em>do</em> experienced developers shy away from learning Objective-C?</h2>
+
+<p>Well that&rsquo;s quite simple really&hellip;</p>
+
+<h3>It&rsquo;s hard!</h3>
+
+<p>I can&rsquo;t overstate that enough. That said, I have to think about <em>why</em> it&rsquo;s so hard. What makes it hard? I think a great majority of it&rsquo;s perceived difficulty is due to how syntacticly unfamilar it is to experienced developers despite being a very idiomatic object-orientated programming language. This isn&rsquo;t something that complete novices will have to compete with. This will be their <em>only</em> exposure to programming in their lives so far. They don&rsquo;t know languages that you and me might consider &lsquo;easier&rsquo; such as Ruby or Python even exist. I think we can overcome this.</p>
+
+<h2>Am I going to look like an idiot?</h2>
+
+<h3>Maybe. Maybe not.</h3>
+
+<p>But there&rsquo;s only one way to find out&hellip;</p>
+
+<p>In case you hadn&rsquo;t figured it out yet, I agreed to run the course. It would be an interesting experience whatever the outcome.</p>
+
+<h2>Day 1</h2>
+
+<p>Having arrived and met my participants, I quickly set to find out about them. I had 8 adults between the ages of 30-55(ish) (and all older than me, yes), none of whom had ever coded before but all were comfortably computer literate. They all worked for companies and charities who are looking to build an app or find out whether or not an app is right for them and they all wanted to have a taster of the programming side of things. <strong>Great!</strong> I had planned for exactly what I got, so no complaints so far.</p>
+
+<p>We jumped head first in to some classic OO programming concepts. Classes, objects, instance variables&hellip; the usual stuff. I figured this would be a good place to start. We had a break and then I fired out the question:</p>
+
+<blockquote><p>What is an object?</p></blockquote>
+
+<p>Which was followed almost instantly by the response:</p>
+
+<blockquote><p>An instance of a class.</p></blockquote>
+
+<p>This had to be a good sign. I felt like this dude.</p>
+
+<p><img src="http://www.reactiongifs.com/wp-content/uploads/2013/06/Colbert-High-Five.gif" alt="OH HELLS YES" /></p>
+
+<p>I had 8 people who were confident with the theory behind (admittedly, the basics) of object-orientated programming. Next, we started to code. The <em>command-line application</em> template in XCode 4.2 was excellent. We could write some simple statements and get the computer outputting stuff to the screen. We started with the basics:</p>
+
+<p><code>objective-c
+NSLog(@"Hello, world!");
+</code></p>
+
+<p><strong>Oh, wow. We just told the computer to do something, and it did it.</strong> No big deal. Except that it was. This was the first successful program that these people had written. So what&rsquo;s next? <strong>Do it three times.</strong></p>
+
+<p><code>objective-c
+NSLog(@"Hello, world!");
+NSLog(@"Hello, world!");
+NSLog(@"Hello, world!");
+</code></p>
+
+<p>Next? Refactor in to a <strong>variable</strong>:</p>
+
+<p><code>objective-c
+NSString *message = @"Hello, world!";
+NSLog(message);
+NSLog(message);
+NSLog(message);
+</code></p>
+
+<p>We carried on like this for the rest of the day. Tiny, tiny, iterations of our program. Which slowly got steadily more and more complex. By the end of the day they had <em>all</em> produced something like this.</p>
+
+<p>```objective-c
+int number = 3;</p>
+
+<p>if (number >= 0 &amp;&amp; number &lt;= 10 &amp;&amp; number * number == 9)
+{</p>
+
+<pre><code>NSLog(@"Congratulations, you found the correct number.");
+</code></pre>
+
+<p>}
+```</p>
+
+<p>and other examples that made use of <code>for</code> loops, <code>NSDictionary</code> and <code>NSArray</code>. Even better, we even got time to discuss mutability and how it works in this context.</p>
+
+<h3>At this point, I&rsquo;m pretty stoked.</h3>
+
+<p>These guys are really getting it. Let&rsquo;s make an app. It won&rsquo;t be a difficult, but just a small app that increases a number on the screen if you press one button, and decreases if you press another. We set up our XCode project, I showed them how to code one button and asked if they could get on and code the other. The majority of them did with very little input. The ones that did struggle were with syntactic issues and not a failure in understanding the underlying concepts. <em>Syntactic fluency in programming comes with practice. So I&rsquo;m not too worried about that.</em></p>
+
+<p>As time passed the participants went from strength to strength with 6 of the 8 people who started the course completing it with a fully working calculator application. I may not have scientifically disproved that &ldquo;year 8 is too late&rdquo;, but it&rsquo;s certainly not as much as a certainty as we had assumed. From now on, when I hear people say &ldquo;I&rsquo;m too old to learn to code.&rdquo; I&rsquo;ll be more willing to argue with them.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Those who can't do...]]></title>
