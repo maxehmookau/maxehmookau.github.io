@@ -4,7 +4,7 @@
   <title><![CDATA[Category: education | My Octopress Blog]]></title>
   <link href="http://maxehmookau.github.io/blog/categories/education/atom.xml" rel="self"/>
   <link href="http://maxehmookau.github.io/"/>
-  <updated>2013-11-24T21:48:04+00:00</updated>
+  <updated>2013-12-02T19:31:05+00:00</updated>
   <id>http://maxehmookau.github.io/</id>
   <author>
     <name><![CDATA[Max]]></name>
@@ -12,6 +12,55 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Things I did not learn during my degree vs Things I did learn during my degree]]></title>
+    <link href="http://maxehmookau.github.io/blog/2013/12/02/things-i-did-not-learn-during-my-degree-vs-things-i-did-learn-during-my-degree/"/>
+    <updated>2013-12-02T19:09:00+00:00</updated>
+    <id>http://maxehmookau.github.io/blog/2013/12/02/things-i-did-not-learn-during-my-degree-vs-things-i-did-learn-during-my-degree</id>
+    <content type="html"><![CDATA[<p>Having only graduated in July 2012, my degree is still relatively fresh in my head. I studied Music Informatics at the University of Sussex. Though it turned out to be basically a Computer Science degree with a slight musical slant since it turned out I was better at coding than playing the piano. I&rsquo;m now a full-time software developer and I truly enjoy what I do, however, many (if not the majority) of the skills I use day-to-day were not directly taught to me during my degree. Here&rsquo;s a list of the things I use day to day that <strong>I did not learn as a direct result of my studies.</strong></p>
+
+<h2>Did not learn</h2>
+
+<ul>
+<li>Version control using Git.</li>
+<li>Test-driven development.</li>
+<li>Testing at all, except for 30 minutes on how to use JUnit.</li>
+<li>Any sort of full-stack web framework. (Rails, Django, etc.)</li>
+<li>Collaborative working using Git and GitHub (or similar).</li>
+<li>Deployment strategies.</li>
+<li>Any sort of server administration.</li>
+<li>Use of a tool such as Redmine or JIRA.</li>
+<li>Anything to do with Agile. (Scrum, Kanban, etc.)</li>
+</ul>
+
+
+<p>Let&rsquo;s contrast that with a list of the things I did learn.</p>
+
+<h2>Did learn</h2>
+
+<ul>
+<li>XSLT, DTDs, AJAX (not using jQuery)</li>
+<li>MATLAB</li>
+<li>Java</li>
+<li>Subversion</li>
+<li>Waterfall methods</li>
+<li>OpenCV</li>
+<li>Machine Learning</li>
+</ul>
+
+
+<p>See where I&rsquo;m going with this? Yeah, there&rsquo;s a couple of cool things on that list. Computer vision is awesome, but I learnt <em>so</em> few of the tools and techniques I use day-to-day. Knowing Git, TDD and being familar with some sort of Agile methodology is pretty much assumed these days, but in three years and after £10,000, I did not know them.</p>
+
+<p>I took a module in my final year called &lsquo;Web Computing&rsquo;. I expected to learn about web frameworks, web apps, stuff that would be <em>useful</em> if I wanted to go in to a career in what I would describe as web computing. First lecture:</p>
+
+<blockquote><p>Be aware that this course does not cover PHP, Rails, or anything like that&hellip;</p></blockquote>
+
+<p>I remember that quote. <em>&ldquo;&hellip;or anything like that&rdquo;</em>, like full-stack frameworks were somehow a waste of time. That module covered XSLT, DTDs, XML, that sort of thing. I learnt very little in that course other than the fact that I did not enjoy it. If an API provides XML instead of JSON I shudder now. But JSON was not even mentioned. Just to remind you, this module was taken in 2011/2012. <strong>This is not a long time ago.</strong> Seems to me that if Universities are tasked with preparing students with the skills required of them by industry, in my experience, the university failed.</p>
+
+<p>I don&rsquo;t mean to be totally negative about my university experience. I enjoyed myself, made some friends, discovered some hobbies and I&rsquo;d do it all again. But in terms of my university experience preparing me for the workplace, I remain to be convinced that my student loan was worth it.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Can adults learn to code?]]></title>
