@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: nhshd | My Octopress Blog]]></title>
+  <link href="http://maxehmookau.github.io/blog/categories/nhshd/atom.xml" rel="self"/>
+  <link href="http://maxehmookau.github.io/"/>
+  <updated>2014-01-31T19:16:17+00:00</updated>
+  <id>http://maxehmookau.github.io/</id>
+  <author>
+    <name><![CDATA[Max]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Age is largely irrelevant.]]></title>
+    <link href="http://maxehmookau.github.io/blog/2014/01/28/age-is-largely-irrelevant/"/>
+    <updated>2014-01-28T20:33:00+00:00</updated>
+    <id>http://maxehmookau.github.io/blog/2014/01/28/age-is-largely-irrelevant</id>
+    <content type="html"><![CDATA[<p><strong>I&rsquo;ve lost count how many times over the last 12 months that I&rsquo;ve been told how it&rsquo;s done by people younger than me.</strong></p>
+
+<p>I&rsquo;m 22. So not old by any stretch of the imagination. I met a young lady (@thisisneena) at the NHS Hack Weekend in Cardiff last week. Members of the NHS come with problems they want solving and coders solve them. She came with her father (a surgeon), an idea, a strong vision and an early-stage prototype she&rsquo;d coded herself. She didn&rsquo;t worry herself about how it could be commercialised, whether someone was going to steal her idea or even the concept of a minimum viable product.</p>
+
+<p>She did the four things that stand between an idea and execution:</p>
+
+<ol>
+<li>She found something she was interested in.</li>
+<li>Found a problem.</li>
+<li>Learnt the skills needed to fix it.</li>
+<li>Just got on and <strong>solved the problem!</strong>
+Her end goal was <a href="http://www.theguardian.com/society/2013/sep/18/nhs-records-system-10bn">not to make a bucket of money</a> or tie the NHS in to some contract that meant she could retire at 17 on a beach somewhere. The end goal was to make people&rsquo;s lives better.</li>
+</ol>
+
+
+<p><img src="http://farm4.staticflickr.com/3695/12156135794_fcff83375b.jpg" alt="Me, @thisisneena and her father presenting ClEWS at #nhshd" /></p>
+
+<p>With age brings experience, but don&rsquo;t let that overshadow all of the things that youth brings to the table. Excitement, enthusiasm, naivity (yes, it&rsquo;s a good thing in moderation), positivity and the overriding feeling of coding because it&rsquo;s fun!
+With age also comes cynicism, the need to provide for ones family and to pay the bills. <strong>That&rsquo;s not neccessarily a bad thing</strong> (those who know me will attest to my overflowing levels of cynicism for one so young.) but we mustn&rsquo;t forget the long nights spent coding because our ICT teacher didn&rsquo;t know enough to teach us anything at school or the first time we put a website on geocities for the world to see and the excitement that brought us. (Unless it was just me?)</p>
+
+<p>Remember, these kids are smart. <strong>Really</strong> smart. If you see a young coder who&rsquo;s learning, offer them work experience, offer to teach them a skill or invite them to a tech meetup. <strong>Just get them involved.</strong> They&rsquo;ll thank you for it.</p>
+
+<p>(Picture credits: <a href="http://twitter.com/paul_clarke">@paul_clarke</a>)</p>
+]]></content>
+  </entry>
+  
+</feed>
