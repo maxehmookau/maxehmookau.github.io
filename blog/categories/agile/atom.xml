@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: agile | My Octopress Blog]]></title>
+  <title><![CDATA[Category: agile | Max Woolf - Software Developer]]></title>
   <link href="http://maxehmookau.github.io/blog/categories/agile/atom.xml" rel="self"/>
   <link href="http://maxehmookau.github.io/"/>
-  <updated>2014-02-14T19:57:32+00:00</updated>
+  <updated>2014-03-03T21:06:11+00:00</updated>
   <id>http://maxehmookau.github.io/</id>
   <author>
     <name><![CDATA[Max]]></name>

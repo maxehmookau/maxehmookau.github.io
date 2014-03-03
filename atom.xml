@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[Max Woolf - Software Developer]]></title>
   <link href="http://maxehmookau.github.io/atom.xml" rel="self"/>
   <link href="http://maxehmookau.github.io/"/>
-  <updated>2014-02-14T19:57:32+00:00</updated>
+  <updated>2014-03-03T21:06:11+00:00</updated>
   <id>http://maxehmookau.github.io/</id>
   <author>
     <name><![CDATA[Max]]></name>
@@ -12,6 +12,73 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Why agile? It works. I think.]]></title>
+    <link href="http://maxehmookau.github.io/blog/2014/03/03/why-agile-it-works-i-think/"/>
+    <updated>2014-03-03T20:36:00+00:00</updated>
+    <id>http://maxehmookau.github.io/blog/2014/03/03/why-agile-it-works-i-think</id>
+    <content type="html"><![CDATA[<p>I recently discovered that &lsquo;agile&rsquo; (small A, big a, I don&rsquo;t care.) is more than just another bullet in your sales guy&rsquo;s buzzword bullshit bingo armoury. I always had my suspicions that there was something good there, now I&rsquo;ve had a go and I get it. So here&rsquo;s a few things that I have learned. (If you&rsquo;re already doing this, none of this will be new to you but I wanted to get them written down.)</p>
+
+<h2>You don&rsquo;t <em>do</em> agile.</h2>
+
+<p>Without sounding like the aformentioned sales guy, you can&rsquo;t <em>do</em> agile. You can <strong>be</strong> agile. Duh.</p>
+
+<p>In other words, you can&rsquo;t follow a strict regiment of pre-planned rules and be agile. <em>Obviously.</em> You can, however, quickly react to change. Identify issues and solve them before they become a big problem.</p>
+
+<p>Scrum is a set of pre-planned rules that facilitate being <em>more</em> agile. But it&rsquo;s not the be all and end all. Your team will probably outgrow Scrum as they find what makes them more productive. I&rsquo;ve heard it described as &ldquo;agile with training wheels&rdquo;. I agree.</p>
+
+<h2>People are <strong>really</strong> bad at estimating</h2>
+
+<p>Utterly, utterly awful. <a href="http://programmers.stackexchange.com/questions/182057/why-do-we-use-story-points-instead-of-man-days-when-estimating-user-stories">Story points</a> are by no means a silver bullet, but they&rsquo;re better than estimating in hours. Try out different relative estimation techniques such as <a href="http://www.gettingagile.com/2008/07/04/affinity-estimating-a-how-to/">affinity estimation</a> or planning poker.</p>
+
+<p><strong>Protip:</strong> Don&rsquo;t give up. It&rsquo;s hard. As my next point explains&hellip;</p>
+
+<h2>Being agile is <strong>difficult</strong></h2>
+
+<p>To properly implement Scrum (which is not the only way of being agile, but it&rsquo;s a good start), you may have to do things you&rsquo;d be otherwise uncomfortable with in any other social situation.</p>
+
+<ul>
+<li>Aggressively timeboxing meetings can make a Scrum Master look rude but can greatly improve the efficiency of meetings.</li>
+<li>Explaining to a client that interrupting a sprint for a &lsquo;critical&rsquo; (not really critical) task can have repercussions for productivity. <a href="http://coder.cl/2012/03/programmers-are-not-resources/">(Programmers are not units of work.)</a></li>
+<li>(Developers) Being empowered to get on and do your job.</li>
+<li>(Managers) Trusting your developers to do their job.</li>
+<li>Being &lsquo;that guy&rsquo; who says <em>&ldquo;this isn&rsquo;t going to work, we should stop.&rdquo;</em></li>
+<li>Not planning months/years in advance. You may feel better, but that won&rsquo;t matter when you overshoot your deadline by 6 months. <em>Also, your client will be annoyed when you spent all that time estimating and you were wrong anyway!</em></li>
+</ul>
+
+
+<p>These are all things that traditional common sense say are bad. Rudeness, managers not managing, admitting defeat early on, not planning well. You shouldn&rsquo;t do these things! Except that actually they&rsquo;re fine.</p>
+
+<ul>
+<li>Rudeness isn&rsquo;t as rude when its for the good of a development team. Even if you feel uncomfortable at the time.</li>
+<li>Telling clients how things are done may seem like biting the hand that feeds you. But setting expectations is equally as important.</li>
+<li>Developers are smart. They don&rsquo;t need to be babysat.</li>
+<li>Managers are natural risk-mitigators. But there is a clear dividing line between manager and Scrum Master.</li>
+<li>Being &lsquo;that guy&rsquo; can save your company months of wasted effort and money.</li>
+<li>Planning in short bursts promotes focus and accepts the fact that estimates more than 2 weeks(?) in the future are essentially useless.</li>
+</ul>
+
+
+<h2>Being agile is fun</h2>
+
+<p>When your team is settled in to the agile flow, it becomes fun quickly.</p>
+
+<p><strong>Gone</strong> are the semi-awkward &ldquo;I don&rsquo;t think we should talk about that here&rdquo; moments in the daily stand-up. It becomes a game as to which team can get their stand-up finished most efficiently.</p>
+
+<p><strong>Gone</strong> are the awkward messages from clients explaining that they want that feature right now.</p>
+
+<p><strong>Gone</strong> are micromanagers and in come Scrum Masters looking out for their development teams.</p>
+
+<p><strong>Gone</strong> are &lsquo;code-monkey&rsquo; developers who wait patiently for orders before dutifully producing code in a caffeine-fuelled stupor.</p>
+
+<p><strong>Gone</strong> are the 2 year development cycles that inevitably end in failure.</p>
+
+<h2>But it&rsquo;s hard.</h2>
+
+<p>Yeah. Nothing I can do about that. You&rsquo;ll have to decide if its worth it for you. These are based on my experiences and they are by no means representative of the rest of developer-kind.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[In praise of getting shit done.]]></title>
