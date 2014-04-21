@@ -1,17 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[Max Woolf - Software Developer]]></title>
   <link href="http://maxehmookau.github.io/atom.xml" rel="self"/>
   <link href="http://maxehmookau.github.io/"/>
-  <updated>2014-04-20T15:52:04+01:00</updated>
+  <updated>2014-04-21T19:34:56+01:00</updated>
   <id>http://maxehmookau.github.io/</id>
   <author>
-    <name><![CDATA[Max]]></name>
+    <name><![CDATA[Max Woolf ]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[The programmer who couldn't stop]]></title>
+    <link href="http://maxehmookau.github.io/blog/2014/04/20/the-programmer-who-couldnt-stop/"/>
+    <updated>2014-04-20T19:11:00+01:00</updated>
+    <id>http://maxehmookau.github.io/blog/2014/04/20/the-programmer-who-couldnt-stop</id>
+    <content type="html"><![CDATA[<p><em>This post isn&rsquo;t techy, but talks about an issue that affects many software developers.</em></p>
+
+<p>Until very recently I suffered from obsessive-compulsive disorder. I use the word suffer because while I still feel the effects of OCD every day, I no longer feel a sense of suffering. I have read <em>a lot</em> of books on the subject of OCD and mental health, it is a fascinating topic but I finally found a book that I haven&rsquo;t been able to put down. <em><a href="http://www.amazon.co.uk/The-Man-Who-Couldnt-Stop/dp/1447238281">&ldquo;The man who couldn&rsquo;t stop: OCD and the true story of a life lost in thought&rdquo;</a></em> is, without doubt, the best book on the subject I have ever read and anybody with even a slight interest in OCD and mental health should read this book right now.</p>
+
+<p>The book makes a clear differentiation between being diagnosed with OCD and being <em>&lsquo;a bit OCD&rsquo;</em>. A term that has appeared all too often in popular culture. <em>&ldquo;Sorry, I have to move that there. I&rsquo;m a bit OCD.&rdquo;</em> is a stark contrast to the all-consuming fear of the feeling of guilt I would have because I didn&rsquo;t check if I had unplugged my alarm clock. Because if I didn&rsquo;t, it would catch fire and kill all of my family. <em>Obviously.</em> Let me give you a window in to that world.</p>
+
+<p>Packed, ready to go. Turn off lights, shut doors, etc. Oh wait, did I turn off the alarm clock? I&rsquo;d better go and check. Yeah, it&rsquo;s off. I may as well turn the light off, I don&rsquo;t want to waste electricity. Did I turn it off properly? I better turn it on and off again, in case the switch didn&rsquo;t click properly. Oh, I&rsquo;ll just unplug it to make sure. Is it touching that other plug? I had better make sure they&rsquo;re not touching each other. Ok, that&rsquo;s fine now. I&rsquo;ll leave. Leave the house, lock the door, walk down the road and the feeling of anxiety hits again. I spent all that time worrying about the alarm clock but I&rsquo;m sure I left the hob on. I couldn&rsquo;t possibly go home to check it? Well, I&rsquo;d rather be late for work than burn down my home. I&rsquo;ll walk back and check. Walk home. Open the door. Check the hob. Tap each hob dial chanting &ldquo;Off&rdquo;, &ldquo;Off&rdquo;, &ldquo;Off&rdquo;, &ldquo;Off&rdquo; for each one. And again. And once more. Ok ready&hellip; no wait, one more, &ldquo;Off&rdquo;, &ldquo;Off&rdquo;, &ldquo;Off&rdquo;, &ldquo;Off&rdquo;. While I&rsquo;m here, I&rsquo;m going to check the alarm clock again. Ok, time to go to work. Lock the door. Walk to work. Get to work. <em>Did I leave the door unlocked?</em></p>
+
+<p>I&rsquo;m lucky. While OCD symptoms used to run my life. They rarely do anymore. Anybody who&rsquo;s ever described themselves as &lsquo;a bit OCD&rsquo; should read the book. When they&rsquo;re finished, I hope they prefer to use the term &lsquo;quirky&rsquo; from now on.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Why agile? It works. I think.]]></title>
