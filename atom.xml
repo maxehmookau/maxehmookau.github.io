@@ -4,7 +4,7 @@
   <title><![CDATA[Max Woolf - Software Developer]]></title>
   <link href="http://maxehmookau.github.io/atom.xml" rel="self"/>
   <link href="http://maxehmookau.github.io/"/>
-  <updated>2014-04-21T19:34:56+01:00</updated>
+  <updated>2014-04-28T22:20:28+01:00</updated>
   <id>http://maxehmookau.github.io/</id>
   <author>
     <name><![CDATA[Max Woolf ]]></name>
@@ -12,6 +12,49 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[The graduate software developers' reading list]]></title>
+    <link href="http://maxehmookau.github.io/blog/2014/04/28/the-graduate-software-developers-reading-lis/"/>
+    <updated>2014-04-28T21:48:00+01:00</updated>
+    <id>http://maxehmookau.github.io/blog/2014/04/28/the-graduate-software-developers-reading-lis</id>
+    <content type="html"><![CDATA[<p>I started my first proper software development job at nearly 2 years ago now and I have done one thing more than anything else:</p>
+
+<p><strong>READ.</strong></p>
+
+<p>I&rsquo;ve read books on development, code, business, agile, psychology and just being a better person. Some of the books were useless. Some were excellent and some I wish I had read while I was at university. Here&rsquo;s a list of the books I&rsquo;ve read in the last 2 years on relevant subjects with a few words on the ones that stood out.</p>
+
+<ul>
+<li><p><strong><a href="http://www.amazon.co.uk/gp/product/0192803158/ref=oh_details_o01_s00_i00?ie=UTF8&amp;psc=1">Cryptography &ndash; A very short introduction.</a></strong> &ndash; A really <em>really</em> short introduction to how cryptography works. Loads of tech every day uses cryptography and most developers just take its functionality for granted. Knowing, even just a little bit, about the theory can set you apart.</p></li>
+<li><p><a href="http://www.amazon.co.uk/gp/product/1781571406/ref=oh_details_o02_s00_i00?ie=UTF8&amp;psc=1">The iPhone App Design Manual: Create Perfect Designs for Effortless Coding and App Store Success</a></p></li>
+<li><p><strong><a href="http://www.amazon.co.uk/gp/product/0091954673/ref=oh_details_o06_s00_i00?ie=UTF8&amp;psc=1">Remote: Office Not Required</a></strong> &ndash; A relatively new book from the makers of Basecamp. If you&rsquo;re not familiar with them, their founder created the Ruby on Rails framework and their books are excellent. This book is about how software companies can work effectively even if they&rsquo;re distributed around the globe.</p></li>
+<li><p><a href="http://www.amazon.co.uk/gp/product/099134460X/ref=oh_details_o08_s00_i00?ie=UTF8&amp;psc=1">ng-book &ndash; The Complete Book on AngularJS</a></p></li>
+<li><p><a href="http://www.amazon.co.uk/gp/product/1449356265/ref=oh_details_o03_s00_i00?ie=UTF8&amp;psc=1">Graph Databases</a></p></li>
+<li><p><a href="http://www.amazon.co.uk/gp/product/B007Y6KDTG/ref=oh_d__o05_details_o05__i00?ie=UTF8&amp;psc=1">Programming in Go: Creating Applications for the 21st Century</a></p></li>
+<li><p><strong><a href="http://www.amazon.co.uk/gp/product/B0026OR3JO/ref=oh_d__o05_details_o05__i00?ie=UTF8&amp;psc=1">The Ruby Programming Language</a></strong> &ndash; A must-read for all Ruby developers. It goes in to the detail of how Ruby works under the hood and shows some lesser-known tricks.</p></li>
+<li><p><a href="http://www.amazon.co.uk/gp/product/B005R2O8Y0/ref=oh_d__o06_details_o06__i00?ie=UTF8&amp;psc=1">12 Essential Skills for Software Architects</a></p></li>
+<li><p><a href="http://www.amazon.co.uk/gp/product/B008HUMTO0/ref=oh_d__o09_details_o09__i00?ie=UTF8&amp;psc=1">Effective Programming: More Than Writing Code</a></p></li>
+<li><p><a href="http://www.amazon.co.uk/gp/product/B00DCWOI5G/ref=oh_d__o00_details_o00__i00?ie=UTF8&amp;psc=1">Developing Backbone.js Applications</a></p></li>
+<li><p><a href="http://www.amazon.co.uk/gp/product/B005MJFA2W/ref=oh_d__o01_details_o01__i00?ie=UTF8&amp;psc=1">Thinking, Fast and Slow</a></p></li>
+<li><p><a href="http://www.amazon.co.uk/gp/product/B008EKF87S/ref=oh_d__o02_details_o02__i00?ie=UTF8&amp;psc=1">Team Geek: A Software Developer&rsquo;s Guide to Working Well with Others</a></p></li>
+<li><p><a href="http://www.amazon.co.uk/gp/product/B003XDUCEU/ref=oh_d__o08_details_o08__i00?ie=UTF8&amp;psc=1">Being Geek: The Software Developer&rsquo;s Career Handbook</a></p></li>
+<li><p><a href="http://www.amazon.co.uk/gp/product/B007RNK0W6/ref=oh_d__o09_details_o09__i00?ie=UTF8&amp;psc=1">Test-Driven iOS Development</a></p></li>
+<li><p><a href="http://www.amazon.co.uk/gp/product/B00AYQNR5U/ref=oh_d__o05_details_o05__i00?ie=UTF8&amp;psc=1">The Passionate Programmer: Creating a Remarkable Career in Software Development</a></p></li>
+<li><p><strong><a href="http://www.amazon.co.uk/gp/product/B003ELY7PG/ref=oh_d__o07_details_o07__i00?ie=UTF8&amp;psc=1">ReWork: Change the Way You Work Forever</a></strong> &ndash; I hate this book. But only because it&rsquo;s so wonderful and I&rsquo;m jealous of the people who wrote it. This is <em>the</em> book for small software development companies. It cuts through all the crap so often found in software development companies. Meetings are toxic. ASAP is poison. Underdo the competition. Planning is guessing. If you read only one book on this list, make it this.</p></li>
+<li><p><a href="http://www.amazon.co.uk/gp/product/B000SEGEKI/ref=oh_d__o08_details_o08__i00?ie=UTF8&amp;psc=1">The Pragmatic Programmer: From Journeyman to Master</a></p></li>
+<li><p><strong><a href="http://www.amazon.co.uk/gp/product/B004O0U74Q/ref=oh_d__o03_details_o03__i00?ie=UTF8&amp;psc=1">The Elements of Scrum</a></strong> &ndash; You won&rsquo;t learn this stuff at uni, but you should really know it. Scrum is a method of developing software as a team and loads of development teams use it. Learn the rules. This book is a really quick read which goes over what is expected of team members.</p></li>
+<li><p><a href="http://www.amazon.co.uk/gp/product/B007P5N8D4/ref=oh_d__o04_details_o04__i00?ie=UTF8&amp;psc=1">Scrum: a Breathtakingly Brief and Agile Introduction</a></p></li>
+<li><p><a href="http://www.amazon.co.uk/gp/product/B004JLMDOM/ref=oh_d__o02_details_o02__i00?ie=UTF8&amp;psc=1">Ruby on Rails 3 Tutorial: Learn Rails by Example (Addison-Wesley Professional Ruby Series)</a></p></li>
+<li><p><a href="http://www.amazon.co.uk/gp/product/B0054YNKYU/ref=oh_d__o03_details_o03__i00?ie=UTF8&amp;psc=1">Core Data for iOS: Developing Data-Driven Applications for the iPad, iPhone, and iPod touch </a></p></li>
+<li><p><a href="http://www.amazon.co.uk/gp/product/B003T0G9FS/ref=oh_d__o06_details_o06__i00?ie=UTF8&amp;psc=1">Letting Everything Become Your Teacher: 100 Lessons in Mindfulness</a></p></li>
+<li><p><a href="http://www.amazon.co.uk/gp/product/B006ZZQHME/ref=oh_d__o07_details_o07__i00?ie=UTF8&amp;psc=1">Inside Apple</a></p></li>
+<li><p><a href="http://www.amazon.co.uk/gp/product/B0068183EA/ref=oh_d__o01_details_o01__i00?ie=UTF8&amp;psc=1">How to Teach Quantum Physics to Your Dog</a></p></li>
+</ul>
+
+
+<p>I&rsquo;ll be adding to this list over the next few days. Let me know which books you&rsquo;ve found most useful in the comments.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[The programmer who couldn't stop]]></title>
