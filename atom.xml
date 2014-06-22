@@ -4,7 +4,7 @@
   <title><![CDATA[Max Woolf - Software Developer]]></title>
   <link href="http://maxehmookau.github.io/atom.xml" rel="self"/>
   <link href="http://maxehmookau.github.io/"/>
-  <updated>2014-05-04T16:29:13+01:00</updated>
+  <updated>2014-06-22T20:07:51+01:00</updated>
   <id>http://maxehmookau.github.io/</id>
   <author>
     <name><![CDATA[Max Woolf ]]></name>
@@ -14,15 +14,26 @@
 
   
   <entry>
-    <title type="html"><![CDATA[The Graduate Software Developer's Reading List, pt.2]]></title>
-    <link href="http://maxehmookau.github.io/blog/2014/05/04/the-graduate-software-developers-reading-list-pt-dot-2/"/>
-    <updated>2014-05-04T16:23:00+01:00</updated>
-    <id>http://maxehmookau.github.io/blog/2014/05/04/the-graduate-software-developers-reading-list-pt-dot-2</id>
-    <content type="html"><![CDATA[<p><em>So <a href="http://maxehmookau.github.io/blog/2014/04/28/the-graduate-software-developers-reading-lis/">part 1</a> of the graduate software developer&rsquo;s reading list seemed rather popular. I thought I&rsquo;d add a few more&hellip;</em></p>
+    <title type="html"><![CDATA[ProTip: Force use of another localisation in development (Objective-C)]]></title>
+    <link href="http://maxehmookau.github.io/blog/2014/06/22/welsh-language-ios-apps/"/>
+    <updated>2014-06-22T20:00:00+01:00</updated>
+    <id>http://maxehmookau.github.io/blog/2014/06/22/welsh-language-ios-apps</id>
+    <content type="html"><![CDATA[<p>I&rsquo;m currently working on a bilingual Welsh/English app and while I was really happy to hear that iOS 8 will treat Welsh as a first class language, currently it does not. Making a Welsh localisation work is a pain.</p>
 
-<p><strong><a href="https://leanpub.com/dealwithit">Deal With It: Attitude for Coders</a></strong> &ndash; Written by Gavin Davies (@gavd_uk), this book is a must-read for any developer, new or old. It&rsquo;s made up of lots of single page ideas, each one backed up by personal experience that makes it super-readable and really fun to read.</p>
+<p>I came across this handy fix to force the current build to load a Welsh localization. Assuming that you have Welsh set up as a localisation in XCode, you can force the device to think that Welsh is the first choice language and read in those strings instead of the default (in my case, English). This means when presenting to clients, I can ask the app to load in Welsh or English by changing a line of code and then submit the two apps separately to the app store.</p>
 
-<p><strong><a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a></strong> &ndash; This is <em>the</em> tutorial for all new Rails developers.</p>
+<p>In <code>main.m</code> before <code>return [UIApplicationMain ...]</code> just stick in these lines:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='objective-c'><span class='line'><span class="n">NSArray</span> <span class="o">*</span><span class="n">langOrder</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSArray</span> <span class="nl">arrayWithObjects:</span><span class="s">@&quot;cy&quot;</span><span class="p">,</span> <span class="nb">nil</span><span class="p">];</span>
+</span><span class='line'><span class="p">[[</span><span class="n">NSUserDefaults</span> <span class="n">standardUserDefaults</span><span class="p">]</span> <span class="nl">setObject:</span><span class="n">langOrder</span> <span class="nl">forKey:</span><span class="s">@&quot;AppleLanguages&quot;</span><span class="p">];</span>
+</span><span class='line'><span class="p">[[</span><span class="n">NSUserDefaults</span> <span class="n">standardUserDefaults</span><span class="p">]</span> <span class="n">synchronize</span><span class="p">];</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Job done. Replase <code>cy</code> with <code>en</code> or any other language you have set up and you can force loading a particular language in development.</p>
 ]]></content>
   </entry>
   

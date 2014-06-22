@@ -4,7 +4,7 @@
   <title><![CDATA[Category: code | Max Woolf - Software Developer]]></title>
   <link href="http://maxehmookau.github.io/blog/categories/code/atom.xml" rel="self"/>
   <link href="http://maxehmookau.github.io/"/>
-  <updated>2014-05-04T16:29:17+01:00</updated>
+  <updated>2014-06-22T20:07:51+01:00</updated>
   <id>http://maxehmookau.github.io/</id>
   <author>
     <name><![CDATA[Max Woolf ]]></name>
@@ -12,6 +12,27 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[ProTip: Force use of another localisation in development (Objective-C)]]></title>
+    <link href="http://maxehmookau.github.io/blog/2014/06/22/welsh-language-ios-apps/"/>
+    <updated>2014-06-22T20:00:00+01:00</updated>
+    <id>http://maxehmookau.github.io/blog/2014/06/22/welsh-language-ios-apps</id>
+    <content type="html"><![CDATA[<p>I&rsquo;m currently working on a bilingual Welsh/English app and while I was really happy to hear that iOS 8 will treat Welsh as a first class language, currently it does not. Making a Welsh localisation work is a pain.</p>
+
+<p>I came across this handy fix to force the current build to load a Welsh localization. Assuming that you have Welsh set up as a localisation in XCode, you can force the device to think that Welsh is the first choice language and read in those strings instead of the default (in my case, English). This means when presenting to clients, I can ask the app to load in Welsh or English by changing a line of code and then submit the two apps separately to the app store.</p>
+
+<p>In <code>main.m</code> before <code>return [UIApplicationMain ...]</code> just stick in these lines:</p>
+
+<p><code>objective-c
+NSArray *langOrder = [NSArray arrayWithObjects:@"cy", nil];
+[[NSUserDefaults standardUserDefaults] setObject:langOrder forKey:@"AppleLanguages"];
+[[NSUserDefaults standardUserDefaults] synchronize];
+</code></p>
+
+<p>Job done. Replase <code>cy</code> with <code>en</code> or any other language you have set up and you can force loading a particular language in development.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[The graduate software developers' reading list]]></title>
