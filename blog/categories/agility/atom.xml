@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: agility | Max Woolf - Software Developer]]></title>
+  <link href="http://maxehmookau.github.io/blog/categories/agility/atom.xml" rel="self"/>
+  <link href="http://maxehmookau.github.io/"/>
+  <updated>2014-07-02T13:18:07+01:00</updated>
+  <id>http://maxehmookau.github.io/</id>
+  <author>
+    <name><![CDATA[Max Woolf ]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Moving from Agile Development to agile development]]></title>
+    <link href="http://maxehmookau.github.io/blog/2014/07/02/moving-beyond-agile/"/>
+    <updated>2014-07-02T12:57:00+01:00</updated>
+    <id>http://maxehmookau.github.io/blog/2014/07/02/moving-beyond-agile</id>
+    <content type="html"><![CDATA[<p>What am I talking about? I&rsquo;m talking about getting rid of &lsquo;Agile Development&rsquo;; certifications, rigid process, faux-flat company hierarchy and moving to agile development: near real-time communication, small feedback loops and empowerment of developers who are making software.</p>
+
+<p>But I bet you&rsquo;re wondering:</p>
+
+<blockquote><p>Why the sudden epiphany Max? Aren&rsquo;t you a big advocate of Scrum?</p></blockquote>
+
+<p>Yeah, I was and still am to a certain extent, but I&rsquo;ve recently started a new job in a much smaller team and it&rsquo;s given me some perspective.</p>
+
+<p>Scrum is good; great even. It still has a place amongst teams with little experience in developing software with agility. But it&rsquo;s not, and should not be the be all and end all of software development. It certainly isn&rsquo;t something that we should, as developers, aspire to as a long-term goal. It&rsquo;s a stepping stone to a better way of working and a very worthwhile one too. It&rsquo;s &lsquo;agile with training wheels&rsquo;. It quickly ingrains the principals of agile development in to its members. <strong>But we do not use training wheels forever</strong> and we definitely don&rsquo;t hand out certificates and praise to those who encourage it.  It starts to hold you back. We&rsquo;ve reached a bizarre paradox at this point. You want to go faster (be more agile), but you just can&rsquo;t because the rigid process (the stabilisers) is holding you back. You&rsquo;re ready to move on but you can&rsquo;t. The process is ingrained and beyond change.</p>
+
+<p>As a result of this idea, why do we need ScrumMaster certifications or even the whole concept of a ScrumMaster. Not just because the name makes me cringe but because why do we want to encourage keeping the stabilisers attached? A true leader (or master if you insist) keeps the stabilisers attached for as little time as possible, empowering the people doing the work to do the best job they can and then slowly removes the stabilisers, encouraging the team to make mistakes and learn for themselves. The development team are probably smart people, you hired them after all. A bad leader says &ldquo;It&rsquo;s 11am. Time for a daily stand up because that&rsquo;s <em>what we always do</em>.&rdquo;</p>
+
+<p>Convinced that Scrum might actually be holding you back? Ok, good. I&rsquo;m not a believer in trashing a decent concept unless there&rsquo;s a better one waiting to take its place. Like I said, that&rsquo;s small-a, agile development. To be a member of an agile development team you don&rsquo;t need a certificate, or even a fancy job title, you can be a manager if you want, team fascilitator, team leader, god of process, I don&rsquo;t care. Just make sure you do the following:</p>
+
+<h2>Communicate</h2>
+
+<p>All the time. Ask questions. Make sure everyone knows what everyone else is doing. Use a daily stand-up if you want. Or don&rsquo;t. <strong>Whatever works for your team.</strong></p>
+
+<h2>Feedback to your customer <em>atleast</em> daily</h2>
+
+<p>Two, three, four, five times daily. They&rsquo;re paying you to make something great but they run their business, they know what&rsquo;s best. They must know what you&rsquo;re doing so <strong>show them!</strong> Feedback can take many forms whether it be just a phone call to update them or a piece of shippable code so they can see a feature in progress. <strong>Whatever works for your team.</strong></p>
+
+<h2>Spot issues early and resolve them quickly</h2>
+
+<p>Use sprint retrospectives if you want but in my experience, once every two weeks isn&rsquo;t often enough. Problems come up unexpectedly, that&rsquo;s why they&rsquo;re called problems.  Got an issue with management? Talk to management. Got an issue with code quality? Talk to the developers. Got an issue with the client? Talk to the client.</p>
+
+<p><em>What I&rsquo;ve described here is just a practical implementation of the Agile Manifesto, which is exactly what Scrum is but with less rigidity. My issue isn&rsquo;t with Scrum itself, but with its inability to change without no longer being &lsquo;Scrum&rsquo;.</em></p>
+
+<p>The rest is up to your team. They&rsquo;re smart people. Empower them and they will, almost always, surprise you.</p>
+]]></content>
+  </entry>
+  
+</feed>
